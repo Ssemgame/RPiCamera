@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RPiCamera || Přehrávač</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Přehrávání videa z kamery</h1>
+    <video id="videoPlayer" width="640" height="480" controls>
+      <source src="{{ url_for('video_feed') }}" type="video/mp4">
+      Váš prohlížeč nepodporuje přehrávání videa.
+    </video>
+  </body>
+</html>
